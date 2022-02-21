@@ -1,11 +1,66 @@
 .header {
-  display: block;
-  height: 500px;
-  width: 400px;
-  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  min-height: 572px;
+  background-color: @header-background-color;
+  background-image: url("../img/header-background.jpg");
+}
+
+.header__wrapper {
+  display: flex;
+  width: 92vw;
+  flex-direction: column;
+  margin: 50px 4vw;
+
+  @media (min-width: @tablet-width) {
+    margin: 50px auto;
+    width: 70vw;
+    max-width: 1050px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 50px auto;
+    max-width: 1050px;
+  }
 }
 
 .header__title {
-  font-size: 300px;
-  color: #fcfcfc;
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 320px;
+  font-size: 52px;
+  line-height: 58px;
+  font-weight: 300;
+  color: @header-font-color;
+
+  @media (min-width: @tablet-width) {
+    max-width: 70%;
+  }
+}
+
+.header__logo {
+  margin: 0;
+  margin-bottom: 140px;
+  font-size: 16px;
+  line-height: 24px;
+  color: @header-font-color;
+}
+
+.header__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: @header-description-color;
+}
+
+.header__login-button {
+  background-color: @main-background-color;
+  height: 70px;
+  width: 260px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
 }
