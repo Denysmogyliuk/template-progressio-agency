@@ -34,8 +34,7 @@
   line-height: 32px;
 
   @media (min-width: @tablet-width) {
-    margin: 50px 10px 50px 12%;
-    max-width: 50%;
+    margin: 50px 10% 50px 25%;
   }
 }
 
@@ -50,14 +49,18 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    margin: 50px 10px 50px 12%;
+    grid-gap: 30px 80px;
+    margin: 50px 10% 50px 25%;
   }
 }
 
 .about__item {
   position: relative;
   width: 70%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .about__item::before {
