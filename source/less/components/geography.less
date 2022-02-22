@@ -1,5 +1,35 @@
+.geography {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.geography__header-wrapper {
+  width: 92vw;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 70vw;
+    max-width: 1050px;
+  }
+}
+
+.geography__header {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    margin: 50px 10% 50px 25%;
+  }
+}
+
 .geography__map-image {
   display: block;
-  width: 100%;
+  width: 92vw;
   height: auto;
+  margin: 0 auto;
 }

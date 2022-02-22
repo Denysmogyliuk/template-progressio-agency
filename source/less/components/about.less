@@ -13,7 +13,7 @@
 
 .about__header {
   margin: 50px 0;
-  color: @small-header-color;
+  color: @main-text-color;
   font-size: 12px;
   line-height: 16px;
   font-weight: 200;
@@ -61,18 +61,18 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
-}
 
-.about__item::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 170px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #c4c4c4;
-  content: counter(item, decimal-leading-zero) " ";
-  counter-increment: item;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    font-size: 16px;
+    line-height: 20px;
+    color: @number-list-color;
+    content: counter(item, decimal-leading-zero) " ";
+    counter-increment: item;
+  }
 }
 
 .about__item-header {
@@ -88,7 +88,7 @@
     content: "";
     height: 1px;
     width: 160px;
-    background-color: #c4c4c4;
+    background-color: @underlines-color;
   }
 }
 
