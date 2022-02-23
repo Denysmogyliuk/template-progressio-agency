@@ -5,15 +5,31 @@
   margin: 50px auto;
 
   @media (min-width: @tablet-width) {
+    width: 70vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-inner-width;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70vw;
   }
 }
 
 .contacts__header {
+  line-height: 32px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 50px;
+
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 45px;
+    line-height: 58px;
   }
 }
 
@@ -23,7 +39,9 @@
 }
 
 .contacts__description {
-  font-size: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
   color: @number-list-color;
 }
 
@@ -31,6 +49,7 @@
   display: flex;
   flex-direction: column;
   padding: 50px 50px;
+  margin-bottom: 80px;
   background-color: @form-background-color;
 }
 
@@ -41,7 +60,7 @@
   background-color: transparent;
   border-bottom: 1px solid @underlines-color;
   outline: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .contacts__form-textarea {
@@ -51,7 +70,8 @@
   border-bottom: 1px solid @underlines-color;
   outline: none;
   padding: 16px 0;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: 18px;
   resize: none;
 }
 
@@ -67,6 +87,16 @@
   font-weight: 700;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background-color: lighten(@form-button-color, 10%);
+  }
+
+  &:active,
+  &:focus {
+    transform: scale(1.07);
+  }
 }
 
 .contacts__phone-mail-wrapper {
@@ -74,13 +104,15 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @media (min-width: @tablet-width) {
-    margin-left: 20%;
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
   }
 }
 
 .contacts__addition {
-  font-size: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
   color: @number-list-color;
 }
 
@@ -98,6 +130,7 @@
 }
 
 .contacts__phone {
+  margin-bottom: 40px;
   text-decoration: none;
   color: inherit;
   font-size: 18px;
@@ -114,4 +147,8 @@
   list-style-type: none;
   gap: 15px;
   padding: 0;
+}
+
+.contacts__social-logo {
+  display: block;
 }

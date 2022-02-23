@@ -10,17 +10,16 @@
   display: flex;
   width: 92vw;
   flex-direction: column;
-  margin: 50px 4vw;
+  margin: 50px auto;
 
   @media (min-width: @tablet-width) {
     margin: 50px auto;
     width: 70vw;
-    max-width: 1050px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 50px auto;
-    max-width: 1050px;
+    width: @desktop-inner-width;
   }
 }
 
@@ -28,7 +27,7 @@
   margin: 0;
   margin-bottom: 40px;
   max-width: 320px;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 58px;
   font-weight: 300;
   color: @header-font-color;
@@ -40,7 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 100%;
+    max-width: @desktop-inner-width;
     font-size: 70px;
     line-height: 82px;
   }
@@ -60,6 +59,11 @@
   font-size: 16px;
   line-height: 24px;
   color: @header-description-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .header__login-button {
@@ -72,4 +76,14 @@
   font-weight: 700;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background-color: darken(@main-background-color, 20%);
+  }
+
+  &:active,
+  &:focus {
+    transform: scale(1.07)
+  }
 }
