@@ -4,10 +4,18 @@
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  background: #fcfcfc;
+  background: @main-background-color;
   min-height: 500px;
   background-image: url("../img/design-background.jpg");
+  background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 600px;
+  }
 }
 
 .design__content-wrapper {
