@@ -8,13 +8,13 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('src/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('src/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -23,7 +23,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'src'
     },
     cors: true,
     notify: false,
@@ -35,8 +35,8 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('src/less/**/*.less', gulp.series(styles));
+  gulp.watch('src/*.html').on('change', browser.reload);
 }
 
 

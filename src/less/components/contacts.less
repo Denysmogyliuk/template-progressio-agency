@@ -4,6 +4,10 @@
   width: 92vw;
   margin: 50px auto;
 
+  @media (min-width: @mobile-wide-width) {
+    width: 75vw;
+  }
+
   @media (min-width: @tablet-width) {
     width: 70vw;
   }
@@ -48,7 +52,7 @@
 .contacts__form {
   display: flex;
   flex-direction: column;
-  padding: 50px 50px;
+  padding: 50px 30px;
   margin-bottom: 80px;
   background-color: @form-background-color;
 }
@@ -64,7 +68,9 @@
 }
 
 .contacts__form-textarea {
+  display: block;
   margin-bottom: 30px;
+  height: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid @underlines-color;
@@ -78,7 +84,7 @@
 .contacts__form-submit {
   display: block;
   height: 70px;
-  width: 50%;
+  width: 150px;
   background-color: @form-button-color;
   color: @header-font-color;
   text-transform: uppercase;
