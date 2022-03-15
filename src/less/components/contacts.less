@@ -10,12 +10,15 @@
 
   @media (min-width: @tablet-width) {
     width: 70vw;
+    margin-top: 80px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-inner-width;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
 }
 
@@ -27,13 +30,14 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 44px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 45px;
     line-height: 58px;
+    margin-bottom: 100px;
   }
 }
 
@@ -55,6 +59,11 @@
   padding: 50px 30px;
   margin-bottom: 80px;
   background-color: @form-background-color;
+
+  @media (min-width: @desktop-width) {
+    padding: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__form-field {
@@ -70,7 +79,6 @@
 .contacts__form-textarea {
   display: block;
   margin-bottom: 30px;
-  height: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid @underlines-color;
@@ -79,6 +87,10 @@
   font-family: inherit;
   font-size: 18px;
   resize: none;
+
+  @media (min-width: @desktop-width) {
+    height: 80px;
+  }
 }
 
 .contacts__form-submit {
