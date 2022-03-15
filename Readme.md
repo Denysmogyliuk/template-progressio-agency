@@ -1,7 +1,7 @@
-HTML Progressio-agency
+HTML template Progressio-agency
 
 '''''
 npm i
 
 '''''
-npm run
+npm run build

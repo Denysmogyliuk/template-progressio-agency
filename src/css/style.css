@@ -288,10 +288,13 @@ body {
   .clients__header {
     font-size: 40px;
     line-height: 44px;
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 1150px) {
   .clients__header {
+    align-self: flex-start;
+    margin: 80px 10% 0 20%;
     font-size: 45px;
     line-height: 58px;
   }
@@ -312,7 +315,7 @@ body {
 @media (min-width: 1150px) {
   .clients__item {
     flex-direction: row;
-    margin: 50px 10% 0 20%;
+    margin: 80px 10% 0 20%;
   }
 }
 .clients__item-container {
@@ -336,21 +339,13 @@ body {
   font-weight: 400;
 }
 .clients__item-content {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
-}
-@media (min-width: 768px) {
-  .clients__item-content {
-    font-size: 18px;
-    line-height: 24px;
-  }
 }
 @media (min-width: 1150px) {
   .clients__item-content {
     text-align: start;
-    font-size: 16px;
-    line-height: 24px;
   }
 }
 .contacts {
@@ -669,6 +664,11 @@ body {
     margin-bottom: 60px;
   }
 }
+@media (min-width: 1150px) {
+  .geography {
+    margin-bottom: 120px;
+  }
+}
 .geography__header-wrapper {
   width: 92vw;
   align-self: center;
@@ -825,6 +825,7 @@ body {
 @media (min-width: 768px) {
   .work {
     width: 70vw;
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 1150px) {
@@ -860,6 +861,12 @@ body {
     margin: 50px 10% 50px 20%;
     font-size: 40px;
     line-height: 44px;
+  }
+}
+@media (min-width: 1150px) {
+  .work__header {
+    font-size: 45px;
+    line-height: 52px;
   }
 }
 .work__list {

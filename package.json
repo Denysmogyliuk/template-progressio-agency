@@ -1,7 +1,7 @@
 {
-  "name": "mishka-24",
+  "name": "Progressio-agency",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "HTML template Progressio-agency",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
