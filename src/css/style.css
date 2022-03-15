@@ -901,10 +901,10 @@ body {
 .work__item::before {
   display: block;
   position: absolute;
-  top: 14px;
+  top: 15px;
   left: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   color: #c4c4c4;
   content: counter(item, decimal-leading-zero) " ";
   counter-increment: item;
