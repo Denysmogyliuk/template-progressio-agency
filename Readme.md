@@ -1,14 +1,26 @@
-HTML template Progressio-agency
+# HTML template Progressio-agency
 
+## Tech stack
 
+- HTML
+- CSS
+- JavaScript
 
-Install Git and Node.js
+## Before start, install next software
 
-'''''
-Use 'npm install' command to install node modules
+- [ ] git
+- [ ] node.js
 
-'''''
-Use 'npm start' command to start project on virtual server
+### Run WEB-page on virtual server
 
-'''''
-Use 'npm run build' command to make Build of project. Build folder located in the root directory
+```bash
+npm install
+npm start
+```
+
+### Build WEB-page files
+
+```bash
+npm install
+npm run build
+```
