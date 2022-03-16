@@ -1,5 +1,9 @@
 HTML template Progressio-agency
 
+
+
+Install Git and Node.js
+
 '''''
 Use 'npm install' command to install node modules
 
