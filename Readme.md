@@ -1,10 +1,10 @@
 HTML template Progressio-agency
 
 '''''
-npm i
+Use 'npm install' command to install node modules
 
 '''''
-npm run build
+Use 'npm start' command to start project on virtual server
 
 '''''
-npm start
+Use 'npm run build' command to make Build of project. Build folder located in the root directory
